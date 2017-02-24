@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Got</title>
+    <title>Game of Thrones</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= link_to image_tag("https://upload.wikimedia.org/wikipedia/commons/2/2e/Game_of_Thrones_2011_logo.svg"), "/houses" %>
+    <h3>Either you win, or you die!</h1>
+    <%= link_to "View Players", characters_path%>
   </head>
+
+  <hr>
 
   <body>
     <%= yield %>

@@ -1,0 +1,12 @@
+<h2>The Players<a href="/characters/new"> (+) </a></h2>
+<% @characters.each do |character| %>
+
+ <div class="character">
+
+   <h2><%=character.name %></h2>
+   <img src="<%= character.img_url %>"/>
+   <p>House <%= character.house.name%></p>
+
+ </div>
+<hr>
+<% end %>

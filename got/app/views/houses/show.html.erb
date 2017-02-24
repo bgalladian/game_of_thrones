@@ -1,0 +1,22 @@
+<h1>House <%= @house.name %></h1> <h3>House Motto: "<%=@house.motto%>"</h3>
+<img src="<%=@house.img_url%>">
+<br>
+
+<a href="/houses/<%=@house.id %>/edit">Update House Information</a></h2>
+<br>
+<%= form_for @house, url: "/houses/#{@house.id}", method: :delete do |f| %>
+<% f.submit "Kill Everyone in this house!", class: "btn-delete"%>
+<% end %>
+
+<% @house.characters.each do |character| %>
+
+  <div class="character">
+    <h2><%= character.name %></h2>
+
+  <%= image_tag character.img_url%>
+
+    <hr>
+
+  </div>
+
+<% end %>

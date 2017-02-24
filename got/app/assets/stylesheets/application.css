@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  text-align: center;
+}
+
+img {
+  border-radius: 13px;
+
+}
+
+.house {
+  display: inline-block;
+  background-color: lightgrey;
+  border-radius: 100px;
+  border: solid darkred;
+  margin: 20px;
+  padding: 20px;
+
+
+}
+
+.house img{
+  display: inline-block;
+  height: 400px;
+  width: 300px;
+}
+
+.character {
+  display: inline-block;
+  background-color: lightgrey;
+  border-radius: 100px;
+  border: solid darkred;
+  margin: 20px;
+  padding: 20px;
+}
+
+.character img{
+  display: inline-block;
+  height: 400px;
+  width: 300px;
+}

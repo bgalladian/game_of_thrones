@@ -32,7 +32,7 @@ aerys = Character.create(name:"Aerys II Targaryen", img_url:"http://vignette3.wi
 #Starks
 edd = Character.create(name:"Eddard Stark", img_url:"http://vignette1.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest?cb=20160730050722", house: stark)
 sansa = Character.create(name:"Sansa Stark", img_url:"http://vignette4.wikia.nocookie.net/gameofthrones/images/6/68/Sansa_stark_s6_battle_bastards_infobox.jpg/revision/latest/scale-to-width-down/683?cb=20160807084759", house: stark)
-arya = Character.create(name:"", img_url:"http://vignette1.wikia.nocookie.net/gameofthrones/images/a/ad/Arya6x10.png/revision/latest?cb=20160629211505", house: stark)
+arya = Character.create(name:"Arya Stark", img_url:"http://vignette1.wikia.nocookie.net/gameofthrones/images/a/ad/Arya6x10.png/revision/latest?cb=20160629211505", house: stark)
 #NightWatch
 jon = Character.create(name:"Jon Snow", img_url:"http://vignette3.wikia.nocookie.net/gameofthrones/images/4/49/Battle_of_the_Bastards_08.jpg/revision/latest/scale-to-width-down/665?cb=20160615184845", house: watch)
 aemon = Character.create(name:"Aemon Targaryan", img_url:"http://vignette2.wikia.nocookie.net/gameofthrones/images/3/32/Aemonepisode5.png/revision/latest?cb=20150511170352", house: watch)
