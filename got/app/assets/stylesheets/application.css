@@ -19,10 +19,7 @@ body {
   text-align: center;
 }
 
-img {
-  border-radius: 13px;
 
-}
 
 .house {
   display: inline-block;
@@ -31,7 +28,6 @@ img {
   border: solid darkred;
   margin: 20px;
   padding: 20px;
-
 
 }
 
@@ -54,4 +50,5 @@ img {
   display: inline-block;
   height: 400px;
   width: 300px;
+  border-radius: 50px;
 }

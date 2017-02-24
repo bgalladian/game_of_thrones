@@ -1,22 +1,21 @@
 <h1>House <%= @house.name %></h1> <h3>House Motto: "<%=@house.motto%>"</h3>
 <img src="<%=@house.img_url%>">
-<br>
 
-<a href="/houses/<%=@house.id %>/edit">Update House Information</a></h2>
 <br>
-<%= form_for @house, url: "/houses/#{@house.id}", method: :delete do |f| %>
-<% f.submit "Kill Everyone in this house!", class: "btn-delete"%>
-<% end %>
+<hr>
+<%= link_to "Add Player To This House", new_house_character_path(@house)%>
+<br>
+<a href="/houses/<%=@house.id %>/edit">Update House Information</a></h2>
+<hr>
+<br>
 
 <% @house.characters.each do |character| %>
-
   <div class="character">
-    <h2><%= character.name %></h2>
-
-  <%= image_tag character.img_url%>
-
-    <hr>
-
+    <h2><%= link_to character.name, house_character_path(@house, character)%></h2>
+    <%= image_tag character.img_url%>
   </div>
+<% end %>
 
+<%= form_for @house, url: "/houses/#{@house.id}", method: :delete do |f| %>
+<% f.submit "ELIMINATE THIS HOUSE & ITS PLAYERS", class: "btn-delete"%>
 <% end %>

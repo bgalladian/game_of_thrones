@@ -18,20 +18,20 @@ class HousesController < ApplicationController
 
   def create
     @house = House.create!(post_params)
-    redirect_to '/houses'
+    redirect_to houses_path
   end
 
 
   def update
     @house = House.find(params[:id])
     @house.update(post_params)
-    redirect_to house_path
+    redirect_to houses_path
   end
 
   def destroy
       @house = House.find(params[:id])
       @house.destroy
-      redirect_to '/houses'
+      redirect_to houses_path
     end
 
 end
