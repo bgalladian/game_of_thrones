@@ -16,14 +16,20 @@
 
 
 body {
+  background-image: url(http://www.imgbase.info/images/safe-wallpapers/tv_movies/game_of_thrones/18499_game_of_thrones.jpg);
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: crimson;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  outline-color: red;
+  font-family: 'Cinzel Decorative', cursive;
 }
-
-
 
 .house {
   display: inline-block;
-  background-color: lightgrey;
+  background-color: darkgrey;
   border-radius: 100px;
   border: solid darkred;
   margin: 20px;
@@ -39,7 +45,7 @@ body {
 
 .character {
   display: inline-block;
-  background-color: lightgrey;
+  background-color: darkgrey;
   border-radius: 100px;
   border: solid darkred;
   margin: 20px;
@@ -51,4 +57,9 @@ body {
   height: 400px;
   width: 300px;
   border-radius: 50px;
+}
+
+a {
+  color: gold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
