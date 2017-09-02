@@ -1,0 +1,15 @@
+<h2>Edit: <%= @character.name %></h2>
+<%= form_for [@house, @character]  do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :picture %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit "Update"%>
+  <% end %>
+
+  <%= form_for [@house, @character], url: "/houses/#{@house.id}/characters/#{@character.id}", method: :delete do |f| %>
+  <%= f.submit "TIME TO DIE!(Kill Player)", class: "btn-delete"%>
+  <% end %>

@@ -1,0 +1,16 @@
+<h1> New Player </h1>
+
+<%= form_for ([@house, @house.characters.build]) do |f| %>
+
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :Picture%>
+  <%= f.text_field :img_url%>
+
+
+<%= f.submit "Add Player"%>
+  <% end %>
+
+<%# f.collection_select :house_id, House.all, :id, :name%>
