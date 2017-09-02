@@ -1,11 +1,13 @@
-<h1>House <%= @house.name %></h1>
-
+<h1>House <%= @house.name %></h1> <h3>House Motto: "<%=@house.motto%>"</h3>
 <img src="<%=@house.img_url%>">
-<h2>House Motto: "<%=@house.motto%>"</h2>
 
+<br>
 <hr>
-<h2><%= link_to "Add Player To This House", new_house_character_path(@house)%> | <a href="/houses/<%=@house.id %>/edit">Update House Information</a></h2>
+<%= link_to "Add Player To This House", new_house_character_path(@house)%>
+<br>
+<a href="/houses/<%=@house.id %>/edit">Update House Information</a></h2>
 <hr>
+<br>
 
 <% @house.characters.each do |character| %>
   <div class="character">

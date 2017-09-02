@@ -1,12 +1,12 @@
-
-<h1>The Houses</h1>
-<h1><a href="/houses/new"> Add New House </a></h1>
-<hr>
+<h2>The Houses<a href="/houses/new"> (+) </a></h2>
 <% @houses.each do |house| %>
+
  <div class="house">
+
    <h2><%= link_to house.name, house %></h2>
    <img src="<%= house.img_url %>"/>
-   <h2>"<%= house.motto %>"</h2>
+   <p>"<%= house.motto %>"</p>
+
  </div>
 
 <% end %>

@@ -13,28 +13,16 @@
  *= require_tree .
  *= require_self
  */
-@font-face {
-  font-family: got;
-  src:url('./game_of_thrones.ttf');
-  font-weight:;
-}
+
 
 body {
-  background-image: url("throne.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   text-align: center;
-  color: crimson;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  outline-color: red;
-  font-family: 'got';r
+  background-image: url(http://hdwallpaperpics.org/wp-content/uploads/2015/04/Game-of-Thrones-Wallpaper-009.jpg);
 }
 
 .house {
   display: inline-block;
-  background-color: darkgrey;
+  background-color: lightgrey;
   border-radius: 100px;
   border: solid darkred;
   margin: 20px;
@@ -50,7 +38,7 @@ body {
 
 .character {
   display: inline-block;
-  background-color: darkgrey;
+  background-color: lightgrey;
   border-radius: 100px;
   border: solid darkred;
   margin: 20px;
@@ -62,9 +50,4 @@ body {
   height: 400px;
   width: 300px;
   border-radius: 50px;
-}
-
-a {
-  color: gold;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
