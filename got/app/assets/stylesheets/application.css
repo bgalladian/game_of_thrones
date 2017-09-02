@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
+@font-face {
+  font-family: got;
+  src:url('./game_of_thrones.ttf');
+  font-weight: bold;
+}
 
 body {
   background-image: url("throne.jpg");
@@ -25,7 +29,7 @@ body {
   color: crimson;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   outline-color: red;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'got';r
 }
 
 .house {
