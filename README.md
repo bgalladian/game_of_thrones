@@ -1,4 +1,4 @@
-# Movie App
+# Either You Win or You Die
 http://eywoyd.herokuapp.com/
 
 ## Description
